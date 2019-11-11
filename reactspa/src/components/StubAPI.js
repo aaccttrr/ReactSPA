@@ -40,6 +40,14 @@ class StubAPI{
 
         if (callback) callback();
       }
+
+//       deleteBook(id){
+//         let book = {
+//             "id": id
+//         }
+//         this.books.pop(book)
+//         console.log(this.books)
+//       }
 }
 
 export default new StubAPI();

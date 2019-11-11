@@ -1,4 +1,5 @@
 import React from 'react'
+import api from './StubAPI'
 
 function Book({book}) {
 
@@ -12,6 +13,7 @@ function Book({book}) {
                         <h2>{book.title}</h2>
                         <h3>Number of pages: {book.pages}</h3>
                         <h3>Genre: {book.genre}</h3>
+                        {/* <button class="bg-danger" onClick={api.deleteBook()}>Delete</button> removed as it did not work */}
                     </div>
                 </div>
             </div>

@@ -35,7 +35,7 @@ class AddBook extends Component {
         })
     }
 
-    createBook = (event) => {
+    createBook=(event)=>{
         event.preventDefault();
         api.addBook(this.state.id,
                     this.state.title,
@@ -56,6 +56,7 @@ class AddBook extends Component {
                         <label class="m-1">Title:  </label>
                         <input
                         type="text"
+                        placeholder="e.g Dracula"
                         value={this.state.title}
                         onChange={this.handleTitleChange}
                         />
@@ -63,6 +64,7 @@ class AddBook extends Component {
                         <label class="m-1">Pages:  </label>
                         <input
                         type="number"
+                        placeholder="e.g 100"
                         value={this.state.pages}
                         onChange={this.handlePagesChange}
                         />
@@ -70,6 +72,7 @@ class AddBook extends Component {
                         <label class="m-1">Genre:  </label>
                         <input
                         type="text"
+                        placeholder="e.g Horror"
                         value={this.state.genre}
                         onChange={this.handleGenreChange}
                         />
